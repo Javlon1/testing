@@ -8,7 +8,7 @@ export default function Header() {
             <div className="container">
                 <nav className="container__nav">
                     <div>
-                        <img src="{logo} "alt="logo" loading="lazy" />
+                        {/* <img src="{logo}"alt="logo" loading="lazy" /> */}
                     </div>
                     <div className="container__nav__number">
                         <a href="tel:998901234567">+998 90 123-45-67</a>

@@ -42,44 +42,16 @@
 
                 &__list {
                     &__item {
-                        margin-top: 2rem;
                         height: 170px;
                         padding: 1rem;
                         border-radius: 1.3rem;
-                        background-color: $gray;
                         display: flex;
-                        justify-content: space-between;
-                        background-image: url("../../Assets/Img/result-bc.png");
-                        background-repeat: no-repeat;
-                        background-position: right top;
-                        position: relative;
-
-                        span {
-                            h4 {
-                                font-size: 30px;
-                                font-weight: 700;
-                            }
-
-                            p {
-                                width: 80%;
-                                margin-bottom: 0;
-                                margin-top: 1.5rem;
-                                font-size: 16px;
-                                font-weight: 500;
-                            }
-                        }
+                        flex-direction: column;
+                        gap: 15px;
+                        background: radial-gradient(50% 50% at 50% 50%, #00D959 0%, #C1EC65 48.96%, #CFFF80 100%);
 
                         b {
-                            top: 0;
-                            right: 1rem;
-                            position: absolute;
-                            font-size: 50px;
-                            font-weight: 700;
-                        }
-
-                        &:first-child {
-                            margin-top: 0;
-                            background: radial-gradient(50% 50% at 50% 50%, #00D959 0%, #C1EC65 48.96%, #CFFF80 100%);
+                            font-size: 18px;
                         }
                     }
                 }

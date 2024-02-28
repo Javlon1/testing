@@ -25,7 +25,6 @@ export default function Result({ }) {
                     }
 
                     const data = await response.json();
-
                     if (data) {
                         setQuizData(data);
                         setLoader(false)
@@ -49,7 +48,7 @@ export default function Result({ }) {
                 <div className="container__top">
                     <h3 className="container__top__title">Natija</h3>
                     <p className="container__top__text">
-                        Ushbu natijalarni barchasi belgilangan javoblarga tayanilgan holatda hosil qilindi. 
+                        Ushbu natijalarni barchasi belgilangan javoblarga tayanilgan holatda hosil qilindi.
                     </p>
                 </div>
                 <div className="container__answer">
@@ -58,10 +57,9 @@ export default function Result({ }) {
                             {
                                 quizData?.map((e, i) => (
                                     <li key={i} className={loader ? "skeleton" : "container__answer__left__list__item"}>
-                                        <span>
-                                            <h4>{e.test_title}</h4>
-                                        </span>
-                                        <b>{e.score}/{e.question_count}</b>
+                                        <h4>📕 {e.test_title}</h4>
+                                        <b>📑 Umumiy test soni: {e.question_count}</b>
+                                        <b>✅ Togri javoblar: {e.score}</b>
                                     </li>
                                 ))
                             }
