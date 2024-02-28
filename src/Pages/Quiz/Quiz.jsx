@@ -64,11 +64,10 @@ export default function Quiz() {
 
         return () => clearInterval(interval);
     }, [seconds]);
-    
+
 
     const heandlerAnswer = (id) => {
         setAnws(id);
-        console.log(id);
     }
 
     const postHandler = () => {

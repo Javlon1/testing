@@ -57,8 +57,6 @@ export default function Intro() {
 
                 const data = await response.json();
 
-                console.log(data)
-
                 if (data.success) {
                     window.localStorage.setItem('token', data.user_token)
                     setToken(data.user_token);
@@ -94,7 +92,7 @@ export default function Intro() {
             <div className="container">
                 <div className="container__list">
                     <div className="container__list__item">
-                        <h3 className='container__list__item__title'>IT sohasida o‘zingiz uchun qaysi kasb mos kelishini bilib oling</h3>
+                        <h3 className='container__list__item__title'>Bu sayt sizga bir nechta imkoniyatlar taqdim etadi. Siz bu sayt da testlarni yechish orqali ingiliz tilidagi ko'nikmalaringizni sinashga yordam beradi</h3>
                         <button onClick={() => { setModal(true) }} className='container__list__item__btn'>Bilib olish</button>
                     </div>
                 </div>
@@ -103,8 +101,7 @@ export default function Intro() {
             <div className={modal ? "pop-up activeModal" : "pop-up"}>
                 <form onSubmit={handleSubmit} className="pop-up__form">
                     <div className="pop-up__form__top">
-                        <h3>IT ga birinchi qadam
-                            shu yerdan boshlanadi!</h3>
+                        <h3>IELTS ga birinchi qadam shu yerdan boshlanadi!</h3>
                         <p onClick={() => { setModal(false) }}>
                             <img src={xImg} alt="" />
                         </p>

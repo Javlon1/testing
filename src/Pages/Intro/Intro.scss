@@ -79,6 +79,7 @@
             position: relative;
 
             h3 {
+                width: 90%;
                 font-size: 20px;
                 font-weight: 500;
                 text-align: left;
@@ -179,7 +180,7 @@
     .intro {
         .container {
             &__list {
-                height: 350px;
+                height: auto;
                 background-size: 300px;
                 padding: 2.1rem 1.5rem;
 

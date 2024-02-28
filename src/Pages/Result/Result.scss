@@ -5,10 +5,10 @@
 
     .container {
         &__top {
-            margin: 0 auto; 
+            margin: 0 auto;
             width: 80%;
             background-image: url("../../Assets/Img/result.png");
-            background-repeat: no-repeat; 
+            background-repeat: no-repeat;
             background-position: right;
             background-color: #F2F2F2;
             padding: 1.2rem;
@@ -25,7 +25,8 @@
             &__text {
                 max-width: 685px;
                 margin-top: 1rem;
-                padding: 0px, 0px, 8px, 0px
+                padding: 0px, 0px, 8px, 0px;
+                font-size: 18px;
             }
         }
 
@@ -52,6 +53,7 @@
                         background-repeat: no-repeat;
                         background-position: right top;
                         position: relative;
+
                         span {
                             h4 {
                                 font-size: 30px;
@@ -99,6 +101,7 @@
                             font-size: 27px;
                             font-weight: 500;
                             line-height: 30px;
+                            color: #8D46F6;
                         }
 
                         a {
@@ -118,7 +121,7 @@
 
                         b {
                             display: block;
-                            color: #8D46F6;
+                            color: #fff;
                             font-size: 27px;
                             font-weight: 500;
                         }
@@ -138,19 +141,12 @@
                         }
 
                         &:first-child {
+                            h3 {
+                                color: #fff;
+                            }
+
                             margin-top: 0;
                             background: radial-gradient(50% 50% at 50% 50%, #EAEED5 0%, #46C1F6 24.08%, #638FF6 43.31%, #7C63F6 69.61%, #8D46F6 100%);
-
-                            h3 {
-                                color: $white;
-                            }
-
-                            p {
-                                font-size: 1rem;
-                                font-weight: 500;
-                                margin-top: 1rem;
-                                color: $white;
-                            }
                         }
                     }
                 }
@@ -279,7 +275,8 @@
         .container {
             &__top {
                 width: 100%;
-                &__title{
+
+                &__title {
                     font-size: 30px;
                 }
             }
