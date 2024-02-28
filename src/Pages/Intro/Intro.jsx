@@ -92,7 +92,7 @@ export default function Intro() {
             <div className="container">
                 <div className="container__list">
                     <div className="container__list__item">
-                        <h3 className='container__list__item__title'>Bu sayt sizga bir nechta imkoniyatlar taqdim etadi. Siz bu sayt da testlarni yechish orqali ingiliz tilidagi ko'nikmalaringizni sinashga yordam beradi</h3>
+                        <h3 className='container__list__item__title'>Siz bu sayt da testlarni yechish orqali ingiliz tilidagi ko'nikmalaringizni sinashga yordam beradi</h3>
                         <button onClick={() => { setModal(true) }} className='container__list__item__btn'>Bilib olish</button>
                     </div>
                 </div>
